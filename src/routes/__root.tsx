@@ -1,4 +1,5 @@
 import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
+import { Toaster } from "@/components/ui/sonner";
 
 import appCss from "../styles.css?url";
 
@@ -29,23 +30,20 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Global Foundation Launch creates a professional, fully functional website for global contracts." },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Global Foundation Launch creates a professional, fully functional website for global contracts." },
+      { title: "LIA Care Foundation — Love. Impact. Action." },
+      { name: "description", content: "A registered Nigerian non-profit advancing health, education, clean water and women's empowerment across underserved communities." },
+      { name: "author", content: "LIA Care Foundation" },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
-      { name: "twitter:title", content: "Lovable App" },
-      { name: "twitter:description", content: "Global Foundation Launch creates a professional, fully functional website for global contracts." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/4a927204-ffcd-4677-9ad3-418768c7c883/id-preview-7402b7cd--9c903d0d-4e15-4d2c-a20a-70873e19a541.lovable.app-1776649906351.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/4a927204-ffcd-4677-9ad3-418768c7c883/id-preview-7402b7cd--9c903d0d-4e15-4d2c-a20a-70873e19a541.lovable.app-1776649906351.png" },
+      { property: "og:site_name", content: "LIA Care Foundation" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
+      { rel: "stylesheet", href: appCss },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: appCss,
+        href: "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap",
       },
     ],
   }),
@@ -69,5 +67,10 @@ function RootShell({ children }: { children: React.ReactNode }) {
 }
 
 function RootComponent() {
-  return <Outlet />;
+  return (
+    <>
+      <Outlet />
+      <Toaster />
+    </>
+  );
 }
