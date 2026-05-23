@@ -4,6 +4,7 @@ import { SiteLayout } from "@/components/site/SiteLayout";
 import about from "@/assets/about-team.jpg";
 import certCac from "@/assets/cert-cac.jpg";
 import certScuml from "@/assets/cert-scuml.jpg";
+import ceo from "@/assets/ceo-prudence.jpg";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -91,6 +92,84 @@ function AboutPage() {
               <p className="text-muted-foreground">Certificate of Registration · SC 151421059 · 4 Nov 2024</p>
             </figcaption>
           </figure>
+        </div>
+      </section>
+
+      <section className="bg-muted/40 border-y border-border">
+        <div className="container mx-auto grid max-w-7xl gap-10 px-4 py-20 sm:px-6 md:grid-cols-[2fr_3fr] md:items-center">
+          <figure className="overflow-hidden rounded-2xl border border-border bg-card shadow-[var(--shadow-elevated)]">
+            <img src={ceo} alt="Prudence Amieibi-Ibama Briggs, Founder & CEO" loading="lazy" width={768} height={960} className="w-full object-cover" />
+            <figcaption className="border-t border-border p-4 text-sm">
+              <p className="font-semibold text-foreground">Prudence Amieibi-Ibama Briggs</p>
+              <p className="text-muted-foreground">Founder & CEO · LIA Consultancy Ltd · LIA Care Foundation</p>
+            </figcaption>
+          </figure>
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-widest text-[var(--brand-orange)]">Leadership</p>
+            <h2 className="mt-2 font-display text-4xl font-semibold sm:text-5xl">A founder rooted in sustainability and people.</h2>
+            <p className="mt-5 text-muted-foreground">
+              Prudence is a sustainability and HR professional with deep expertise in
+              learning &amp; development, ISO management systems, and Health, Safety &
+              Environment (HSE) governance. She founded LIA to bridge two missions —
+              helping organizations operate responsibly, and channeling that work back
+              into the communities that need it most.
+            </p>
+            <div className="mt-6 grid gap-4 sm:grid-cols-2">
+              {[
+                { k: "B.Sc. Microbiology", v: "University of Port Harcourt" },
+                { k: "ISO 9001:2015 Lead Auditor", v: "SGS-certified" },
+                { k: "FSSC / ISO 22000:2018", v: "Lead Auditor (SGS)" },
+                { k: "HSE Governance", v: "Level 3, NISCN" },
+              ].map((c) => (
+                <div key={c.k} className="rounded-xl border border-border bg-background p-4">
+                  <p className="text-sm font-semibold text-foreground">{c.k}</p>
+                  <p className="text-xs text-muted-foreground">{c.v}</p>
+                </div>
+              ))}
+            </div>
+            <p className="mt-6 text-sm text-muted-foreground">
+              Through <span className="font-semibold text-foreground">LIA Consultancy Ltd</span>,
+              Prudence delivers Environmental Impact Assessments, ISO 9001 / 14001 /
+              45001 / 50001 implementation, climate strategy, and HSE training to
+              clients across oil &amp; gas, power, FMCG and food sectors. The proceeds
+              and partnerships fuel <span className="font-semibold text-foreground">LIA Care Foundation's</span> work in
+              health, education, clean water and women's empowerment.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="container mx-auto max-w-7xl px-4 py-20 sm:px-6">
+        <p className="text-sm font-semibold uppercase tracking-widest text-[var(--brand-green)]">Sister organization</p>
+        <h2 className="mt-2 font-display text-4xl font-semibold">LIA Consultancy Limited</h2>
+        <p className="mt-3 max-w-3xl text-muted-foreground">
+          A leading Nigerian environmental services and consultancy firm —
+          <em> "Sustainable Solutions for a Better Tomorrow."</em> The consultancy's
+          revenue and partnerships underwrite the Foundation's community programs,
+          ensuring long-term sustainability beyond donor cycles.
+        </p>
+        <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          {[
+            "Environmental Impact Assessments (EIA)",
+            "Environmental Audit Reporting",
+            "ISO 50001:2018 Energy Audits",
+            "ISO 9001 / 14001 / 45001 Implementation",
+            "Climate Change Mitigation & Adaptation",
+            "EMS Implementation & Certification",
+            "Biodiversity Conservation",
+            "Waste Management & Recycling",
+            "Air & Water Quality Monitoring",
+            "HSE Procurement & Training",
+          ].map((s) => (
+            <div key={s} className="rounded-xl border border-border bg-card p-5">
+              <p className="text-sm font-medium text-foreground">{s}</p>
+            </div>
+          ))}
+        </div>
+        <div className="mt-8 grid gap-3 text-sm text-muted-foreground sm:grid-cols-3">
+          <p><span className="font-semibold text-foreground">HQ:</span> 34 Pomona Street, Suncity, Abuja</p>
+          <p><span className="font-semibold text-foreground">Email:</span> prudencebriggs@gmail.com</p>
+          <p><span className="font-semibold text-foreground">Phone:</span> +234 806 459 2426</p>
         </div>
       </section>
     </SiteLayout>
