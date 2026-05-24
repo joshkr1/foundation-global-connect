@@ -40,7 +40,7 @@ export function Footer() {
           <ul className="space-y-2.5 text-sm text-white/70">
             <li className="flex items-start gap-2"><MapPin className="mt-0.5 h-4 w-4 text-[var(--brand-orange)]" /> Abuja, Nigeria</li>
             <li className="flex items-start gap-2"><Mail className="mt-0.5 h-4 w-4 text-[var(--brand-orange)]" /> hello@liacarefoundation.org</li>
-            <li className="flex items-start gap-2"><Phone className="mt-0.5 h-4 w-4 text-[var(--brand-orange)]" /> +234 800 000 0000</li>
+            <li className="flex items-start gap-2"><Phone className="mt-0.5 h-4 w-4 text-[var(--brand-orange)]" /> +234 806 459 2426</li>
           </ul>
         </div>
       </div>
