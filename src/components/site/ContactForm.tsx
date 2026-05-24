@@ -64,7 +64,7 @@ export function ContactForm({ source = "contact_form", compact = false }: Props)
         <div className="grid gap-4 sm:grid-cols-2">
           <div className="space-y-1.5">
             <Label htmlFor="phone">Phone</Label>
-            <Input id="phone" name="phone" type="tel" maxLength={40} placeholder="+234 800 000 0000" />
+            <Input id="phone" name="phone" type="tel" maxLength={40} placeholder="+234 806 459 2426" />
           </div>
           <div className="space-y-1.5">
             <Label htmlFor="organization">Organization</Label>
