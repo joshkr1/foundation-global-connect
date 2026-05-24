@@ -43,7 +43,7 @@ function ContactPage() {
           <div className="rounded-2xl border border-border bg-card p-6">
             <Phone className="h-6 w-6 text-[var(--brand-cyan)]" />
             <h3 className="mt-2 font-display text-lg font-semibold">Phone</h3>
-            <p className="text-sm text-muted-foreground">+234 800 000 0000</p>
+            <p className="text-sm text-muted-foreground">+234 806 459 2426</p>
           </div>
         </aside>
         <div className="rounded-2xl border border-border bg-card p-7 shadow-[var(--shadow-elevated)] sm:p-10">
